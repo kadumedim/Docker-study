@@ -5,9 +5,7 @@ Studying docker syntax and workflow, based on an online Udemy Course
 ```
 Curso/Course : https://www.udemy.com/course/curso-docker/
 ```
-
 ###### Recursos
-
 - NodeJs
     - Express
 - Docker
