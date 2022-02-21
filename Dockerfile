@@ -15,3 +15,6 @@ COPY . .
 
 #Expoe a porta do nosso webserver
 EXPOSE 8080
+
+#E por fim... Roda nosso app 'server.js'
+CMD [ "node", "server.js" ]
