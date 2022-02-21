@@ -1,0 +1,16 @@
+version: "3.7"
+services:
+#Aqui criamos uma img teste do mysql com alguns argumentos recomendados na página do docker hub do mysql
+  db:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+#Aqui pedimos para o compose construir nosso Dockerfile
+  api:
+    build: .
+    container_name: node-teste
+    restart: always
+    ports:
+      - "8080:8080"
